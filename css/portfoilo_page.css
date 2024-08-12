@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&display=swap');
+
+/* BRANDING SECTION */
+.branding_section {
+  padding: 3rem;
+}
+.branding_section .container {
+  padding: 4rem 0rem;
+}
+.branding_section h2 {
+  color: #353535;
+  font-weight: 700;
+  text-align: center;
+  font-size: calc(1.5em + 1vw);
+}
+
+.product_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+  gap: 4rem 4rem;
+  margin-top: 1rem;
+}
+.product_image,
+.product_content {
+  flex: 1;
+}
+.product_image img {
+  width: 100%;
+  height: auto;
+}
+.product_content p {
+  line-height: 1.6;
+  font-size: .9em;
+  font-weight: 600;
+  text-align: justify;
+}
+
+/* OTHER SECTIONS */
+.other_section {
+  padding: 4rem 0rem 6rem 0rem;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  margin: 2rem 0rem;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 40px);
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .branding_section {
+    padding: 4rem 4rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .product_section {
+    flex-direction: column;
+  }
+}
